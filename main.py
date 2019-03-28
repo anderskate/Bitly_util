@@ -1,10 +1,8 @@
 import requests
 from dotenv import load_dotenv
 load_dotenv()
-from requests.exceptions import MissingSchema, ConnectionError, HTTPError, InvalidURL
 import os
 import sys
-import re
 import argparse
     
 def shorten_link(url):
@@ -37,8 +35,6 @@ def check_for_a_short_link(url):
   return response_from_site.ok
 
 def main():
-
-  # user_url = input('Введите значение ссылки: ')
 
   parser = argparse.ArgumentParser(description='Данная программа сокращает ссылки.')
   parser.add_argument('link', help='Ссылка для сокращения')
