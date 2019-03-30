@@ -1,6 +1,5 @@
 import requests
 from dotenv import load_dotenv
-load_dotenv()
 import os
 import sys
 import argparse
@@ -35,6 +34,7 @@ def check_for_a_short_link(url):
   return response_from_site.ok
 
 def main():
+  load_dotenv()
 
   parser = argparse.ArgumentParser(description='Данная программа сокращает ссылки.')
   parser.add_argument('link', help='Ссылка для сокращения')
