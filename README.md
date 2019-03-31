@@ -21,10 +21,10 @@ pip install -r requirements.txt
 ```
 ### Простой пример использования
 
-Сокращение ссылки google.com
+Сокращение ссылки proglib.io/p/let-us-learn-program/
 ```
-iMac-Andrej:bitly anderskate$ python main.py http://google.com
-{'created_at': '1970-01-01T00:00:00+0000', 'id': 'bit.ly/2TdQ9KE', 'link': 'http://bit.ly/2TdQ9KE', 'custom_bitlinks': [], 'long_url': 'http://google.com/', 'archived': False, 'tags': [], 'deeplinks': [], 'references': {'group': 'https://api-ssl.bitly.com/v4/groups/Bj2mlFawUJC'}}
+iMac-Andrej:bitly anderskate$ python main.py https://proglib.io/p/let-us-learn-program/
+{'created_at': '1970-01-01T00:00:00+0000', 'id': 'bit.ly/2V4d08Z', 'link': 'http://bit.ly/2V4d08Z', 'custom_bitlinks': [], 'long_url': 'https://proglib.io/p/let-us-learn-program/', 'archived': False, 'tags': [], 'deeplinks': [], 'references': {'group': 'https://api-ssl.bitly.com/v4/groups/Bj2mlFawUJC'}}
 ```
 Узнать количество кликов по сокращенной ссылке bit.ly/2TdQ9KE
 ```
