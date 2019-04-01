@@ -24,12 +24,12 @@ pip install -r requirements.txt
 Сокращение ссылки proglib.io/p/let-us-learn-program/
 ```
 iMac-Andrej:bitly anderskate$ python main.py https://proglib.io/p/let-us-learn-program/
-{'created_at': '1970-01-01T00:00:00+0000', 'id': 'bit.ly/2V4d08Z', 'link': 'http://bit.ly/2V4d08Z', 'custom_bitlinks': [], 'long_url': 'https://proglib.io/p/let-us-learn-program/', 'archived': False, 'tags': [], 'deeplinks': [], 'references': {'group': 'https://api-ssl.bitly.com/v4/groups/Bj2mlFawUJC'}}
+http://bit.ly/2V4d08Z
 ```
 Узнать количество переходов по сокращенной ссылке bit.ly/2TdQ9KE
 ```
 iMac-Andrej:bitly anderskate$ python main.py http://bit.ly/2TdQ9KE
-{"unit_reference":"2019-03-31T17:11:37+0000","total_clicks":8,"units":-1,"unit":"day"}
+Количество переходов по ссылке bitly: 8
 ```
 
 ### Цель проекта
