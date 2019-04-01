@@ -8,13 +8,13 @@ def shorten_link(url):
     params = {"long_url": url}
     response_from_site = get_response('https://api-ssl.bitly.com/v4/shorten', params, post=True)
 
-    return response_from_site.json()
+    return response_from_site.json()['link']
 
 def get_transitions_amount(url):
     params = {"units": -1}
     response_from_site = get_response('https://api-ssl.bitly.com/v4/bitlinks/{}/clicks/summary'.format(url), params)
 
-    return response_from_site.text
+    return 'Количество переходов по ссылке bitly: ' + str(response_from_site.json()['total_clicks'])
 
 def get_response(url, params, post=False):
     payload = {"Authorization": "Bearer " + os.getenv("TOKEN")}
